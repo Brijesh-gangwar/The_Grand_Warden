@@ -13,7 +13,7 @@ class _IGS_NT3State extends State<IGS_NT3> {
     return Scaffold(
       backgroundColor: Colors.blue[900],
       appBar: AppBar(
-        title: Text("IGS_NT3"),
+        title: const Text("IGS_NT3"),
       ),
       body: SingleChildScrollView(
         child: Column(
@@ -24,10 +24,10 @@ class _IGS_NT3State extends State<IGS_NT3> {
                 Expanded(child: Image.asset("assets/act_power.png")),
               ],
             ),
-            SizedBox(
+            const SizedBox(
               height: 20,
             ),
-            Row(
+            const Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
                 Text("Appar pwr",
@@ -38,7 +38,7 @@ class _IGS_NT3State extends State<IGS_NT3> {
                 )
               ],
             ),
-            Row(
+            const Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
                 Text("React power",
@@ -49,7 +49,7 @@ class _IGS_NT3State extends State<IGS_NT3> {
                 )
               ],
             ),
-            Row(
+            const Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
                 Text("Pwr factor",
@@ -60,7 +60,7 @@ class _IGS_NT3State extends State<IGS_NT3> {
                 )
               ],
             ),
-            Row(
+            const Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
                 Text("Gen factor",
@@ -71,7 +71,7 @@ class _IGS_NT3State extends State<IGS_NT3> {
                 )
               ],
             ),
-            Row(
+            const Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
                 Text("Gen V",
@@ -82,7 +82,7 @@ class _IGS_NT3State extends State<IGS_NT3> {
                 )
               ],
             ),
-            Row(
+            const Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
                 Text("Oil press",
@@ -93,7 +93,7 @@ class _IGS_NT3State extends State<IGS_NT3> {
                 )
               ],
             ),
-            Row(
+            const Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
                 Text("Water temp",
@@ -104,7 +104,7 @@ class _IGS_NT3State extends State<IGS_NT3> {
                 )
               ],
             ),
-            Row(
+            const Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
                 Text("Fuel level",
@@ -115,7 +115,7 @@ class _IGS_NT3State extends State<IGS_NT3> {
                 )
               ],
             ),
-            SizedBox(
+            const SizedBox(
               height: 140,
             )
           ],
@@ -132,22 +132,22 @@ class _IGS_NT3State extends State<IGS_NT3> {
                 onPressed: () {},
                 shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(4)),
-                child: Icon(Icons.report_gmailerrorred_outlined),
+                child: const Icon(Icons.report_gmailerrorred_outlined),
               ),
               FloatingActionButton(
                 onPressed: () {},
                 shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(4)),
-                child: Icon(Icons.voice_over_off),
+                child: const Icon(Icons.voice_over_off),
               ),
               FloatingActionButton(
                 backgroundColor: Colors.green[800],
                 shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(4)),
                 onPressed: () {},
-                child: Text("I"),
+                child: const Text("I"),
               ),
-              SizedBox(
+              const SizedBox(
                 width: 2,
               ),
               FloatingActionButton(
@@ -155,7 +155,7 @@ class _IGS_NT3State extends State<IGS_NT3> {
                 shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(4)),
                 onPressed: () {},
-                child: Text(
+                child: const Text(
                   "O",
                   style: TextStyle(fontSize: 24),
                 ),

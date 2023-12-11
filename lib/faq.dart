@@ -16,7 +16,7 @@ class _faqState extends State<faq> {
     return SafeArea(
       child: Scaffold(
         appBar: AppBar(
-          title: Center(
+          title: const Center(
             child: Text(
               "FAQ",
               style: TextStyle(
@@ -31,7 +31,7 @@ class _faqState extends State<faq> {
             child: Column(
               children: [
                 ExpansionTileCard(
-                  title: Text(
+                  title: const Text(
                     "General Purposes",
                     style: TextStyle(fontSize: 20, fontWeight: FontWeight.w500),
                   ),
@@ -39,9 +39,9 @@ class _faqState extends State<faq> {
                     Column(
                       children: [
                         ExpansionTileCard(
-                          title: Text("What is Udemy?"),
+                          title: const Text("What is Udemy?"),
                           children: [
-                            Text(
+                            const Text(
                                 "Udemy is an online learning platform that offers a wide range of courses on various topics."),
                             SizedBox(
                               height: 0.02 * h,
@@ -49,9 +49,9 @@ class _faqState extends State<faq> {
                           ],
                         ),
                         ExpansionTileCard(
-                          title: Text("How do I download the Udemy app?"),
+                          title: const Text("How do I download the Udemy app?"),
                           children: [
-                            Text(
+                            const Text(
                                 "You can download the Udemy app from the App Store (for iOS) or Google Play Store (for Android)."),
                             SizedBox(
                               height: 0.02 * h,
@@ -63,15 +63,15 @@ class _faqState extends State<faq> {
                   ],
                 ),
                 ExpansionTileCard(
-                  title: Text(
+                  title: const Text(
                     "Account and Registration",
                     style: TextStyle(fontSize: 20, fontWeight: FontWeight.w500),
                   ),
                   children: [
                     ExpansionTileCard(
-                      title: Text("How do I create a Udemy account?"),
+                      title: const Text("How do I create a Udemy account?"),
                       children: [
-                        Text(
+                        const Text(
                             "You can sign up for a Udemy account by providing your email address and creating a password."),
                         SizedBox(
                           height: 0.02 * h,
@@ -79,10 +79,10 @@ class _faqState extends State<faq> {
                       ],
                     ),
                     ExpansionTileCard(
-                      title: Text(
+                      title: const Text(
                           "Can I access my Udemy account on multiple devices?"),
                       children: [
-                        Text(
+                        const Text(
                             "Yes, you can access your Udemy account on different devices, and your progress will sync across them."),
                         SizedBox(
                           height: 0.02 * h,
@@ -92,15 +92,15 @@ class _faqState extends State<faq> {
                   ],
                 ),
                 ExpansionTileCard(
-                  title: Text(
+                  title: const Text(
                     "Payments and Refunds",
                     style: TextStyle(fontSize: 20, fontWeight: FontWeight.w500),
                   ),
                   children: [
                     ExpansionTileCard(
-                      title: Text("What payment methods are accepted?"),
+                      title: const Text("What payment methods are accepted?"),
                       children: [
-                        Text(
+                        const Text(
                             "Udemy accepts various payment methods, including credit/debit cards and PayPal."),
                         SizedBox(
                           height: 0.02 * h,
@@ -109,7 +109,7 @@ class _faqState extends State<faq> {
                     ),
                   ],
                 ),
-                ExpansionTileCard(
+                const ExpansionTileCard(
                   title: Text(
                     "Technical Issues",
                     style: TextStyle(fontSize: 20, fontWeight: FontWeight.w500),
@@ -125,15 +125,15 @@ class _faqState extends State<faq> {
                   ],
                 ),
                 ExpansionTileCard(
-                  title: Text(
+                  title: const Text(
                     "Certificates and Course Completion",
                     style: TextStyle(fontSize: 20, fontWeight: FontWeight.w500),
                   ),
                   children: [
                     ExpansionTileCard(
-                      title: Text("How do I get a certificate of completion?"),
+                      title: const Text("How do I get a certificate of completion?"),
                       children: [
-                        Text(
+                        const Text(
                             "Once you finish a course, you can download a certificate of completion from the course dashboard."),
                         SizedBox(
                           height: 0.02 * h,
@@ -143,15 +143,15 @@ class _faqState extends State<faq> {
                   ],
                 ),
                 ExpansionTileCard(
-                  title: Text(
+                  title: const Text(
                     "Support",
                     style: TextStyle(fontSize: 20, fontWeight: FontWeight.w500),
                   ),
                   children: [
                     ExpansionTileCard(
-                      title: Text("How do I contact Udemy support?"),
+                      title: const Text("How do I contact Udemy support?"),
                       children: [
-                        Text(
+                        const Text(
                             "You can contact Udemy support through the Help and Support section in the app or on the website."),
                         SizedBox(
                           height: 0.02 * h,

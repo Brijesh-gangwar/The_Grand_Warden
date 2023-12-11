@@ -15,43 +15,43 @@ class _homeState extends State<home> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Home"),
+        title: const Text("Home"),
       ),
       body: SingleChildScrollView(
         child: Column(
           children: [
-            Row(
+            const Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [Icon(Icons.density_small_sharp), Icon(Icons.person)],
             ),
-            Text("Move to smart controller "),
+            const Text("Move to smart controller "),
             ElevatedButton(
                 onPressed: () {
                   Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => IntGen_SRNR(),
+                        builder: (context) => const IntGen_SRNR(),
                       ));
                 },
-                child: Text("IntGen_SRNR")),
+                child: const Text("IntGen_SRNR")),
             ElevatedButton(
                 onPressed: () {
                   Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => IGS_NT3(),
+                        builder: (context) => const IGS_NT3(),
                       ));
                 },
-                child: Text("IGS_NT3")),
+                child: const Text("IGS_NT3")),
             ElevatedButton(
                 onPressed: () {
                   Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => IGS_NT8(),
+                        builder: (context) => const IGS_NT8(),
                       ));
                 },
-                child: Text("IGS_NT8")),
+                child: const Text("IGS_NT8")),
           ],
         ),
       ),

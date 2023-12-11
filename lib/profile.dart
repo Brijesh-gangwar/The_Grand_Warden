@@ -18,7 +18,7 @@ class _profileState extends State<profile> {
     var a = MediaQuery.of(context).size.width;
     var b = MediaQuery.of(context).size.height;
     return Scaffold(
-        backgroundColor: Color.fromARGB(255, 249, 249, 251),
+        backgroundColor: const Color.fromARGB(255, 249, 249, 251),
         body: SafeArea(
           child: SingleChildScrollView(
             child: Padding(
@@ -43,7 +43,7 @@ class _profileState extends State<profile> {
                       Row(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
-                          Container(
+                          SizedBox(
                             height: b * 0.118,
                             child:
                                 SvgPicture.asset('images/profilepicture.svg'),
@@ -78,7 +78,7 @@ class _profileState extends State<profile> {
                                 width: a * 0.35,
                                 height: b * 0.086,
                                 decoration: BoxDecoration(
-                                  color: Color.fromARGB(201, 255, 255, 255),
+                                  color: const Color.fromARGB(201, 255, 255, 255),
                                   borderRadius: BorderRadius.circular(10),
                                 ),
                                 child: Padding(
@@ -97,7 +97,7 @@ class _profileState extends State<profile> {
                                       ),
                                       Text("256",
                                           style:
-                                              TextStyle(fontSize: a * 0.045,color: Color(0xFFFF647D),fontWeight: FontWeight.w500)),
+                                              TextStyle(fontSize: a * 0.045,color: const Color(0xFFFF647D),fontWeight: FontWeight.w500)),
                                     ],
                                   ),
                                 ),
@@ -110,7 +110,7 @@ class _profileState extends State<profile> {
                                 width: a * 0.35,
                                 height: b * 0.086,
                                 decoration: BoxDecoration(
-                                  color: Color.fromARGB(201, 255, 255, 255),
+                                  color: const Color.fromARGB(201, 255, 255, 255),
                                   borderRadius: BorderRadius.circular(10),
                                 ),
                                 child: Padding(
@@ -129,7 +129,7 @@ class _profileState extends State<profile> {
                                       ),
                                       Text("28",
                                           style:
-                                              TextStyle(fontSize: a * 0.045,color: Color.fromARGB(255, 75, 75, 254),fontWeight: FontWeight.w500)),
+                                              TextStyle(fontSize: a * 0.045,color: const Color.fromARGB(255, 75, 75, 254),fontWeight: FontWeight.w500)),
                                     ],
                                   ),
                                 ),
@@ -163,7 +163,7 @@ class _profileState extends State<profile> {
                         height: b * 0.08,
                         width: a * 0.86,
                         decoration: BoxDecoration(
-                          color: Color.fromARGB(201, 255, 255, 255),
+                          color: const Color.fromARGB(201, 255, 255, 255),
                           borderRadius: BorderRadius.circular(10),
                         ),
                         child: Row(
@@ -186,7 +186,7 @@ class _profileState extends State<profile> {
                             ),
                             Container(
                               child: CupertinoSwitch(
-                                activeColor: Color(0xFFFF647D),
+                                activeColor: const Color(0xFFFF647D),
                                 value: rem,
                                 onChanged: (bool value) {
                                   setState(() {
@@ -209,7 +209,7 @@ class _profileState extends State<profile> {
                         height: b * 0.08,
                         width: a * 0.86,
                         decoration: BoxDecoration(
-                          color: Color.fromARGB(201, 255, 255, 255),
+                          color: const Color.fromARGB(201, 255, 255, 255),
                           borderRadius: BorderRadius.circular(10),
                         ),
                         child: Row(
@@ -235,7 +235,7 @@ class _profileState extends State<profile> {
                             ),
                             Container(
                               child: CupertinoSwitch(
-                                activeColor: Color(0xFFFF647D),
+                                activeColor: const Color(0xFFFF647D),
                                 value: not,
                                 onChanged: (bool value) {
                                   setState(() {
@@ -272,7 +272,7 @@ class _profileState extends State<profile> {
                         height: b * 0.08,
                         width: a * 0.86,
                         decoration: BoxDecoration(
-                          color: Color.fromARGB(201, 255, 255, 255),
+                          color: const Color.fromARGB(201, 255, 255, 255),
                           borderRadius: BorderRadius.circular(10),
                         ),
                         child: InkWell(
@@ -316,7 +316,7 @@ class _profileState extends State<profile> {
                         height: b * 0.08,
                         width: a * 0.86,
                         decoration: BoxDecoration(
-                          color: Color.fromARGB(201, 255, 255, 255),
+                          color: const Color.fromARGB(201, 255, 255, 255),
                           borderRadius: BorderRadius.circular(10),
                         ),
                         child: InkWell(
@@ -360,7 +360,7 @@ class _profileState extends State<profile> {
                         height: b * 0.08,
                         width: a * 0.86,
                         decoration: BoxDecoration(
-                          color: Color.fromARGB(201, 255, 255, 255),
+                          color: const Color.fromARGB(201, 255, 255, 255),
                           borderRadius: BorderRadius.circular(10),
                         ),
                         child: InkWell(
@@ -415,7 +415,7 @@ class _profileState extends State<profile> {
                         height: b * 0.08,
                         width: a * 0.86,
                         decoration: BoxDecoration(
-                          color: Color.fromARGB(201, 255, 255, 255),
+                          color: const Color.fromARGB(201, 255, 255, 255),
                           borderRadius: BorderRadius.circular(10),
                         ),
                         child: InkWell(
@@ -459,7 +459,7 @@ class _profileState extends State<profile> {
                         height: b * 0.08,
                         width: a * 0.86,
                         decoration: BoxDecoration(
-                          color: Color.fromARGB(201, 255, 255, 255),
+                          color: const Color.fromARGB(201, 255, 255, 255),
                           borderRadius: BorderRadius.circular(10),
                         ),
                         child: InkWell(
@@ -503,7 +503,7 @@ class _profileState extends State<profile> {
                         height: b * 0.08,
                         width: a * 0.86,
                         decoration: BoxDecoration(
-                          color: Color.fromARGB(201, 255, 255, 255),
+                          color: const Color.fromARGB(201, 255, 255, 255),
                           borderRadius: BorderRadius.circular(10),
                         ),
                         child: InkWell(

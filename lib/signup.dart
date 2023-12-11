@@ -10,13 +10,14 @@ String? _validpassword(value) {
   if (!(value.length < 16 && value.length > 6)) {
     return "Password should be between 6-16 words";
   }
+  return null;
 }
 
 TextEditingController nameController = TextEditingController();
 TextEditingController passController = TextEditingController();
 
 class signup extends StatefulWidget {
-  signup({super.key});
+  const signup({super.key});
 
   @override
   State<signup> createState() => _signupState();
@@ -25,7 +26,7 @@ class signup extends StatefulWidget {
 void _submitform() {
   if (_formkey.currentState!.validate()) {
     ScaffoldMessenger.of(_formkey.currentContext!)
-        .showSnackBar(SnackBar(content: Text("Form submit successfully")));
+        .showSnackBar(const SnackBar(content: Text("Form submit successfully")));
   }
 }
 
@@ -35,7 +36,7 @@ class _signupState extends State<signup> {
     var a = MediaQuery.of(context).size.width;
     var b = MediaQuery.of(context).size.height;
     return Scaffold(
-      backgroundColor: Color.fromARGB(229, 252, 251, 251),
+      backgroundColor: const Color.fromARGB(229, 252, 251, 251),
       body: SafeArea(
         child: Padding(
           padding: EdgeInsets.fromLTRB(a * 0.02, b * 0.02, a * 0.02, 0),
@@ -46,7 +47,7 @@ class _signupState extends State<signup> {
                 child: SingleChildScrollView(
                   child: Column(
                     children: [
-                      Container(
+                      SizedBox(
                         width: a * 0.2,
                         height: b * 0.3,
                         child: FittedBox(
@@ -79,11 +80,11 @@ class _signupState extends State<signup> {
                             height: b * 0.05,
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(20),
-                              color: Color.fromARGB(255, 188, 187, 187),
+                              color: const Color.fromARGB(255, 188, 187, 187),
                             ),
                             child: Row(
                               children: [
-                                Container(
+                                SizedBox(
                                   height: b * 0.05,
                                   width: a * 0.25,
                                   child: TextButton(
@@ -91,7 +92,7 @@ class _signupState extends State<signup> {
                                         Navigator.pushReplacement(
                                             context,
                                             MaterialPageRoute(
-                                              builder: (context) => login(),
+                                              builder: (context) => const login(),
                                             ));
                                       },
                                       child: Text(
@@ -102,12 +103,12 @@ class _signupState extends State<signup> {
                                         ),
                                       )),
                                 ),
-                                Container(
+                                SizedBox(
                                   height: b * 0.05,
                                   width: a * 0.3,
                                   child: ElevatedButton(
                                       style: ElevatedButton.styleFrom(
-                                        primary: Colors.white,
+                                        backgroundColor: Colors.white,
                                         shape: RoundedRectangleBorder(
                                             borderRadius:
                                                 BorderRadius.circular(20)),
@@ -136,12 +137,12 @@ class _signupState extends State<signup> {
                             labelStyle: TextStyle(
                                 fontSize: a * 0.04,
                                 fontWeight: FontWeight.w500,
-                                color: Color.fromARGB(195, 133, 133, 133)),
+                                color: const Color.fromARGB(195, 133, 133, 133)),
                             border: OutlineInputBorder(
                                 borderSide: BorderSide.none,
                                 borderRadius: BorderRadius.circular(10.0)),
                             filled: true,
-                            fillColor: Color.fromARGB(255, 247, 243, 243),
+                            fillColor: const Color.fromARGB(255, 247, 243, 243),
                           ),
                           validator: (value) {
                             if (value!.isEmpty) {
@@ -161,13 +162,13 @@ class _signupState extends State<signup> {
                             labelStyle: TextStyle(
                                 fontSize: a * 0.04,
                                 fontWeight: FontWeight.w500,
-                                color: Color.fromARGB(195, 133, 133, 133)),
+                                color: const Color.fromARGB(195, 133, 133, 133)),
                             border: OutlineInputBorder(
                               borderSide: BorderSide.none,
                               borderRadius: BorderRadius.circular(10),
                             ),
                             filled: true,
-                            fillColor: Color.fromARGB(255, 247, 243, 243),
+                            fillColor: const Color.fromARGB(255, 247, 243, 243),
                           ),
                         ),
                       ),
@@ -183,13 +184,13 @@ class _signupState extends State<signup> {
                             labelStyle: TextStyle(
                                 fontSize: a * 0.04,
                                 fontWeight: FontWeight.w500,
-                                color: Color.fromARGB(195, 133, 133, 133)),
+                                color: const Color.fromARGB(195, 133, 133, 133)),
                             border: OutlineInputBorder(
                               borderRadius: BorderRadius.circular(10),
                               borderSide: BorderSide.none,
                             ),
                             filled: true,
-                            fillColor: Color.fromARGB(255, 247, 243, 243),
+                            fillColor: const Color.fromARGB(255, 247, 243, 243),
                           ),
                           validator: _validpassword,
                         ),
@@ -201,14 +202,14 @@ class _signupState extends State<signup> {
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           Container(
-                            margin: EdgeInsets.only(top: 10),
+                            margin: const EdgeInsets.only(top: 10),
                             width: 320,
                             height: 50,
                             child: ElevatedButton(
                               style: ButtonStyle(
                                 backgroundColor:
                                     MaterialStateProperty.all<Color>(
-                                        Color.fromARGB(255, 249, 106, 104)),
+                                        const Color.fromARGB(255, 249, 106, 104)),
                                 shape: MaterialStateProperty.all<
                                     RoundedRectangleBorder>(
                                   RoundedRectangleBorder(
@@ -219,7 +220,7 @@ class _signupState extends State<signup> {
                               onPressed: () {
                                 if (_formkey.currentState!.validate()) {
                                   ScaffoldMessenger.of(_formkey.currentContext!)
-                                      .showSnackBar(SnackBar(
+                                      .showSnackBar(const SnackBar(
                                     content: Text(
                                       "Login successful",
                                       style: TextStyle(
@@ -231,7 +232,7 @@ class _signupState extends State<signup> {
                                   ));
                                 }
                               },
-                              child: Text(
+                              child: const Text(
                                 "Sign Up",
                                 style: TextStyle(
                                     fontSize: 18, color: Colors.white),

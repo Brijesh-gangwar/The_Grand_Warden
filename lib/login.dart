@@ -11,6 +11,7 @@ String? _validpassword(value) {
   if (!(value.length < 16 && value.length > 6)) {
     return "Password should be between 6-16 words";
   }
+  return null;
 }
 
 TextEditingController nameController = TextEditingController();
@@ -18,7 +19,7 @@ TextEditingController nameController = TextEditingController();
 TextEditingController passController = TextEditingController();
 
 class login extends StatefulWidget {
-  login({super.key});
+  const login({super.key});
 
   @override
   State<login> createState() => _loginState();
@@ -51,16 +52,16 @@ class _loginState extends State<login> {
                     height: 220,
                     width: 300,
                   ),
-                  Padding(
-                    padding: const EdgeInsets.all(12.0),
+                  const Padding(
+                    padding: EdgeInsets.all(12.0),
                     child: Text(
                       "Welcome back",
                       style:
                           TextStyle(fontSize: 18, fontWeight: FontWeight.w400),
                     ),
                   ),
-                  Padding(
-                    padding: const EdgeInsets.only(bottom: 7),
+                  const Padding(
+                    padding: EdgeInsets.only(bottom: 7),
                     child: Text(
                       "Login your account",
                       style:
@@ -69,26 +70,26 @@ class _loginState extends State<login> {
                   ),
                   Row(
                     children: [
-                      SizedBox(
+                      const SizedBox(
                         width: 110,
                       ),
                       Container(
                         height: 38,
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(20),
-                          color: Color.fromARGB(255, 219, 214, 214),
+                          color: const Color.fromARGB(255, 219, 214, 214),
                         ),
                         alignment: Alignment.center,
                         child: Row(
                           children: [
                             ElevatedButton(
                                 style: ElevatedButton.styleFrom(
-                                    primary: Colors.white,
+                                    backgroundColor: Colors.white,
                                     shape: RoundedRectangleBorder(
                                         borderRadius:
                                             BorderRadius.circular(20))),
                                 onPressed: () {},
-                                child: Text(
+                                child: const Text(
                                   "Login",
                                   style: TextStyle(
                                       fontSize: 14, color: Colors.black),
@@ -98,7 +99,7 @@ class _loginState extends State<login> {
                                   Navigator.pushReplacement(
                                       context,
                                       MaterialPageRoute(
-                                        builder: (context) => signup(),
+                                        builder: (context) => const signup(),
                                       ));
                                 },
                                 child: const Text(
@@ -149,10 +150,10 @@ class _loginState extends State<login> {
                   SizedBox(
                     child: ElevatedButton(
                       style: ElevatedButton.styleFrom(
-                          primary: Colors.red,
+                          backgroundColor: Colors.red,
                           shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(12)),
-                          padding: EdgeInsets.only(
+                          padding: const EdgeInsets.only(
                               right: 135, left: 130, top: 10, bottom: 10)),
                       onPressed: () {
                         if (_formkey.currentState!.validate()) {
@@ -170,10 +171,10 @@ class _loginState extends State<login> {
                         Navigator.push(
                             context,
                             MaterialPageRoute(
-                              builder: (context) => home(),
+                              builder: (context) => const home(),
                             ));
                       },
-                      child: Text(
+                      child: const Text(
                         "Login",
                         style: TextStyle(fontSize: 16),
                       ),
