@@ -6,7 +6,7 @@ class about_us extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     var h = MediaQuery.of(context).size.height;
-    var b = MediaQuery.of(context).size.width;
+    
     return Scaffold(
       appBar: AppBar(
         title: const Text('About Us'),

@@ -12,7 +12,7 @@ class _faqState extends State<faq> {
   @override
   Widget build(BuildContext context) {
     var h = MediaQuery.of(context).size.height;
-    var b = MediaQuery.of(context).size.width;
+
     return SafeArea(
       child: Scaffold(
         appBar: AppBar(
@@ -131,7 +131,8 @@ class _faqState extends State<faq> {
                   ),
                   children: [
                     ExpansionTileCard(
-                      title: const Text("How do I get a certificate of completion?"),
+                      title: const Text(
+                          "How do I get a certificate of completion?"),
                       children: [
                         const Text(
                             "Once you finish a course, you can download a certificate of completion from the course dashboard."),

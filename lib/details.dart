@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:the_grand_warden/profile.dart';
+import 'package:the_grand_warden/about_us.dart';
+import 'package:the_grand_warden/chart.dart';
+import 'package:the_grand_warden/faq.dart';
 
 class details extends StatefulWidget {
   const details({super.key});
@@ -17,6 +19,7 @@ class _detailsState extends State<details> {
     return SafeArea(
       child: Scaffold(
         drawer: Drawer(
+          width: 0.3 * w,
           child: ListView(
             children: [
               DrawerHeader(
@@ -47,8 +50,38 @@ class _detailsState extends State<details> {
                 title: Text("FAQ"),
                 onTap: () {
                   Navigator.of(context).pop();
+
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => faq(),
+                      ));
                 },
               ),
+              ListTile(
+                title: Text("ABOUT US"),
+                onTap: () {
+                  Navigator.of(context).pop();
+
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => about_us(),
+                      ));
+                },
+              ),
+              // ListTile(
+              //   title: Text("chart"),
+              //   onTap: () {
+              //     Navigator.of(context).pop();
+
+              //     Navigator.push(
+              //         context,
+              //         MaterialPageRoute(
+              //           builder: (context) => chart(),
+              //         ));
+              //   },
+              // ),
               ListTile(
                 title: Text("SETTINGS"),
                 onTap: () {
