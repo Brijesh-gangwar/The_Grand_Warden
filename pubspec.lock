@@ -57,6 +57,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.0.6"
+  ellipsized_text:
+    dependency: "direct main"
+    description:
+      name: ellipsized_text
+      sha256: d4d372c2baf8d4adfb2ca3728c1e5955d1683e75fae774b311d557ad13317105
+      url: "https://pub.dev"
+    source: hosted
+    version: "1.2.0"
   expansion_tile_card:
     dependency: "direct main"
     description:
