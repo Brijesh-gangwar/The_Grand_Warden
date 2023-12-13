@@ -119,93 +119,229 @@ class _homeState extends State<home> {
           child: Column(
             children: [
               Row(
+                mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Container(
-                    padding: EdgeInsetsDirectional.all(4),
-                    width: w * 0.2,
-                    decoration: BoxDecoration(
-                        color: Colors.amber,
-                        border: Border.all(width: 1),
-                        borderRadius: BorderRadius.circular(4)),
-                    child: Column(
-                      children: [
-                        Text("Grid Status"),
-                        Text(
-                          "Connected to main grid",
-                          softWrap: true,
-                          style: TextStyle(fontSize: 18),
-                        )
-                      ],
-                    ),
-                  ),
-                  Container(
-                    padding: EdgeInsetsDirectional.all(4),
-                    decoration: BoxDecoration(
-                      color: Colors.amber,
-                      border: Border.all(
-                        width: 1,
+                  Column(
+                    children: [
+                      Container(
+                        child: Icon(Icons.person),
+                        decoration: BoxDecoration(
+                            border: Border.all(width: 2),
+                            borderRadius: BorderRadius.circular(10)),
                       ),
-                      borderRadius: BorderRadius.circular(2),
-                    ),
-                    child: Column(
-                      children: [
-                        Text("Grid Status"),
-                        Row(
-                          children: [
-                            Column(
-                              children: [
-                                Text(
-                                  "50 KW",
-                                  style: TextStyle(fontSize: 26),
-                                ),
-                                Text("Production")
-                              ],
-                            ),
-                            // VerticalDivider(
-                            //   color: Colors.red,
-                            //   thickness: 2,
-                            //   width: 10,
-                            //   endIndent: 50,
-                            // ),
-                            Column(
-                              children: [
-                                Text(
-                                  "30 KW",
-                                  style: TextStyle(fontSize: 26),
-                                ),
-                                Text("Consumption")
-                              ],
-                            ),
-                          ],
-                        )
-                      ],
-                    ),
-                  )
+                      Container(
+                        height: 20,
+                        width: 4,
+                        color: Colors.black,
+                      )
+                    ],
+                  ),
+                  Column(
+                    children: [
+                      Container(
+                        child: Icon(Icons.person),
+                        decoration: BoxDecoration(
+                            border: Border.all(width: 2),
+                            borderRadius: BorderRadius.circular(10)),
+                      ),
+                      Container(
+                        height: 60,
+                        width: 4,
+                        color: Colors.black,
+                      )
+                    ],
+                  ),
+                  Column(
+                    children: [
+                      Container(
+                        child: Icon(Icons.person),
+                        decoration: BoxDecoration(
+                            border: Border.all(width: 2),
+                            borderRadius: BorderRadius.circular(10)),
+                      ),
+                      Container(
+                        height: 20,
+                        width: 4,
+                        color: Colors.black,
+                      )
+                    ],
+                  ),
                 ],
               ),
+
               Row(
                 children: [
                   Container(
-                    padding: EdgeInsetsDirectional.all(4),
+                    child: Icon(Icons.person),
                     decoration: BoxDecoration(
-                        color: Colors.amber,
-                        border: Border.all(width: 1),
+                        border: Border.all(width: 2),
                         borderRadius: BorderRadius.circular(10)),
-                    child: Column(
-                      children: [
-                        Text("Battery Sec"),
-                        Text(
-                          "75%",
-                          style: TextStyle(fontSize: 14),
-                        )
-                      ],
-                    ),
                   ),
                   Container(
-                    child: Icon(Icons.map),
-                  )
+                    color: Colors.black,
+                    width: 100,
+                    height: 4,
+                  ),
+                  Container(
+                    decoration: BoxDecoration(
+                        border: Border.all(width: 2),
+                        borderRadius: BorderRadius.circular(20)),
+                    child: Icon(
+                      Icons.line_style_outlined,
+                      size: 100,
+                    ),
+                  ),
                 ],
-              )
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Column(
+                    children: [
+                      Container(
+                        height: 20,
+                        width: 4,
+                        color: Colors.black,
+                      ),
+                      Container(
+                        child: Icon(Icons.person),
+                        decoration: BoxDecoration(
+                            border: Border.all(width: 2),
+                            borderRadius: BorderRadius.circular(10)),
+                      ),
+                    ],
+                  ),
+                  Column(
+                    children: [
+                      Container(
+                        height: 50,
+                        width: 4,
+                        color: Colors.black,
+                      ),
+                      Container(
+                        child: Icon(Icons.person),
+                        decoration: BoxDecoration(
+                            border: Border.all(width: 2),
+                            borderRadius: BorderRadius.circular(10)),
+                      ),
+                    ],
+                  ),
+                  Column(
+                    children: [
+                      Container(
+                        height: 20,
+                        width: 4,
+                        color: Colors.black,
+                      ),
+                      Container(
+                        child: Icon(Icons.person),
+                        decoration: BoxDecoration(
+                            border: Border.all(width: 2),
+                            borderRadius: BorderRadius.circular(10)),
+                      ),
+                    ],
+                  ),
+                ],
+              ),
+
+              // IntrinsicHeight(
+              //   child: Row(
+              //     children: [
+              //       Container(
+              //         padding: EdgeInsetsDirectional.all(4),
+              //         width: w * 0.2,
+              //         decoration: BoxDecoration(
+              //             color: Colors.amber,
+              //             border: Border.all(width: 1),
+              //             borderRadius: BorderRadius.circular(4)),
+              //         child: const Column(
+              //           children: [
+              //             Text("Grid Status"),
+              //             Text(
+              //               "Connected to main grid",
+              //               softWrap: true,
+              //               style: TextStyle(fontSize: 18),
+              //             )
+              //           ],
+              //         ),
+              //       ),
+              //       SizedBox(
+              //         width: 8,
+              //       ),
+              //       Expanded(
+              //         child: Container(
+              //           padding: EdgeInsetsDirectional.all(4),
+              //           decoration: BoxDecoration(
+              //             border: Border.all(
+              //               width: 1,
+              //             ),
+              //             borderRadius: BorderRadius.circular(2),
+              //           ),
+              //           child: const Column(
+              //             children: [
+              //               Text("Grid Status"),
+              //               Row(
+              //                 children: [
+              //                   Column(
+              //                     children: [
+              //                       Text(
+              //                         "50 KW",
+              //                         style: TextStyle(fontSize: 26),
+              //                       ),
+              //                       Text("Production")
+              //                     ],
+              //                   ),
+              //                   VerticalDivider(
+              //                     color: Colors.red,
+              //                     thickness: 2,
+              //                     width: 10,
+              //                     endIndent: 50,
+              //                   ),
+              //                   Column(
+              //                     children: [
+              //                       Text(
+              //                         "30 KW",
+              //                         style: TextStyle(fontSize: 26),
+              //                       ),
+              //                       Text("Consumption")
+              //                     ],
+              //                   ),
+              //                 ],
+              //               )
+              //             ],
+              //           ),
+              //         ),
+              //       )
+              //     ],
+              //   ),
+              // ),
+              // Row(
+              //   children: [
+              //     Container(
+              //       padding: EdgeInsetsDirectional.all(4),
+              //       decoration: BoxDecoration(
+              //           color: Colors.amber,
+              //           border: Border.all(width: 1),
+              //           borderRadius: BorderRadius.circular(10)),
+              //       child: const Column(
+              //         children: [
+              //           Text("Battery Sec"),
+              //           Text(
+              //             "75%",
+              //             style: TextStyle(fontSize: 14),
+              //           )
+              //         ],
+              //       ),
+              //     ),
+              //     Container(
+              //       padding: EdgeInsetsDirectional.all(4),
+              //       decoration: BoxDecoration(
+              //           border: Border.all(width: 1),
+              //           borderRadius: BorderRadius.circular(10)),
+              //       child: Icon(Icons.map),
+              //     )
+              //   ],
+              // )
             ],
           ),
         ),
