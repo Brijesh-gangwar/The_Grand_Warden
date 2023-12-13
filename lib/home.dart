@@ -1,8 +1,6 @@
-import 'package:ellipsized_text/ellipsized_text.dart';
 import 'package:flutter/material.dart';
-import 'package:the_grand_warden/IGS_NT3.dart';
-import 'package:the_grand_warden/IGS_NT8.dart';
-import 'package:the_grand_warden/IntGen_SRNR.dart';
+import 'package:flutter_svg/flutter_svg.dart';
+
 import 'package:the_grand_warden/about_us.dart';
 import 'package:the_grand_warden/faq.dart';
 
@@ -126,8 +124,9 @@ class _homeState extends State<home> {
                       Container(
                         child: Icon(Icons.person),
                         decoration: BoxDecoration(
-                            border: Border.all(width: 2),
-                            borderRadius: BorderRadius.circular(10)),
+                          shape: BoxShape.circle,
+                          border: Border.all(width: 2),
+                        ),
                       ),
                       Container(
                         height: 20,
@@ -141,8 +140,9 @@ class _homeState extends State<home> {
                       Container(
                         child: Icon(Icons.person),
                         decoration: BoxDecoration(
-                            border: Border.all(width: 2),
-                            borderRadius: BorderRadius.circular(10)),
+                          shape: BoxShape.circle,
+                          border: Border.all(width: 2),
+                        ),
                       ),
                       Container(
                         height: 60,
@@ -156,11 +156,12 @@ class _homeState extends State<home> {
                       Container(
                         child: Icon(Icons.person),
                         decoration: BoxDecoration(
-                            border: Border.all(width: 2),
-                            borderRadius: BorderRadius.circular(10)),
+                          border: Border.all(width: 2),
+                          shape: BoxShape.circle,
+                        ),
                       ),
                       Container(
-                        height: 20,
+                        height: 100,
                         width: 4,
                         color: Colors.black,
                       )
@@ -174,8 +175,9 @@ class _homeState extends State<home> {
                   Container(
                     child: Icon(Icons.person),
                     decoration: BoxDecoration(
-                        border: Border.all(width: 2),
-                        borderRadius: BorderRadius.circular(10)),
+                      border: Border.all(width: 2),
+                      shape: BoxShape.circle,
+                    ),
                   ),
                   Container(
                     color: Colors.black,
@@ -183,14 +185,12 @@ class _homeState extends State<home> {
                     height: 4,
                   ),
                   Container(
-                    decoration: BoxDecoration(
-                        border: Border.all(width: 2),
-                        borderRadius: BorderRadius.circular(20)),
-                    child: Icon(
-                      Icons.line_style_outlined,
-                      size: 100,
-                    ),
-                  ),
+                      padding: EdgeInsets.all(10),
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(20),
+                        border: Border.all(width: 1),
+                      ),
+                      child: SvgPicture.asset("assets/utility.svg")),
                 ],
               ),
               Row(
@@ -206,8 +206,9 @@ class _homeState extends State<home> {
                       Container(
                         child: Icon(Icons.person),
                         decoration: BoxDecoration(
-                            border: Border.all(width: 2),
-                            borderRadius: BorderRadius.circular(10)),
+                          border: Border.all(width: 2),
+                          shape: BoxShape.circle,
+                        ),
                       ),
                     ],
                   ),
@@ -221,8 +222,9 @@ class _homeState extends State<home> {
                       Container(
                         child: Icon(Icons.person),
                         decoration: BoxDecoration(
-                            border: Border.all(width: 2),
-                            borderRadius: BorderRadius.circular(10)),
+                          border: Border.all(width: 2),
+                          shape: BoxShape.circle,
+                        ),
                       ),
                     ],
                   ),
@@ -236,8 +238,9 @@ class _homeState extends State<home> {
                       Container(
                         child: Icon(Icons.person),
                         decoration: BoxDecoration(
-                            border: Border.all(width: 2),
-                            borderRadius: BorderRadius.circular(10)),
+                          border: Border.all(width: 2),
+                          shape: BoxShape.circle,
+                        ),
                       ),
                     ],
                   ),
