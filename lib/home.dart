@@ -190,7 +190,11 @@ class _homeState extends State<home> {
                         borderRadius: BorderRadius.circular(20),
                         border: Border.all(width: 1),
                       ),
-                      child: SvgPicture.asset("assets/utility.svg")),
+                      child: SvgPicture.asset(
+                        "assets/utility poles.svg",
+                        height: 20,
+                        width: 20,
+                      )),
                 ],
               ),
               Row(
