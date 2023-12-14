@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:the_grand_warden/about_us.dart';
-import 'package:the_grand_warden/chart.dart';
+
 import 'package:the_grand_warden/faq.dart';
 
 class details extends StatefulWidget {

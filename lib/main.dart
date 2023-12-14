@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:the_grand_warden/details.dart';
+
 import 'package:the_grand_warden/home.dart';
+import 'package:the_grand_warden/login.dart';
 
 void main() {
   runApp(const MyApp());

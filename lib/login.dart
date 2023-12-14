@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_gif/flutter_gif.dart';
 import 'package:the_grand_warden/home.dart';
 import 'package:the_grand_warden/signup.dart';
 
@@ -33,6 +34,8 @@ void _submitform() {
 }
 
 class _loginState extends State<login> {
+  late FlutterGifController controller1;
+
   @override
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size;
@@ -47,11 +50,9 @@ class _loginState extends State<login> {
                   SizedBox(
                     height: size.height * .1,
                   ),
-                  Image.asset(
-                    "assets/img.png",
-                    height: 220,
-                    width: 300,
-                  ),
+                  GifImage(
+                      image: AssetImage("assets/appname.gif"),
+                      controller: controller1),
                   const Padding(
                     padding: EdgeInsets.all(12.0),
                     child: Text(
